@@ -118,6 +118,10 @@
     _arrayToReplace = [NSMutableArray arrayWithObjects:@"|br|", nil];
     [self speechRecognition];
     
+    _attachmentBtn.hidden = true;
+    _audioBtn.translatesAutoresizingMaskIntoConstraints = false;
+    [[_audioBtn.rightAnchor constraintEqualToAnchor:_sendBtn.leftAnchor constant:-10] setActive:true];
+    
     _messageTextField.translatesAutoresizingMaskIntoConstraints = false;
     [[_messageTextField.rightAnchor constraintEqualToAnchor:_audioBtn.leftAnchor constant:-10] setActive:true];
    

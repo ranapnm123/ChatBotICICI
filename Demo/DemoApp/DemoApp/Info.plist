@@ -19,11 +19,15 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>ChatBotBaseURL</key>
-	<string>https://bfsd.uat.bfsgodirect.com/bot/middleware/ios/JUBIZm13rS_bajajFinserv</string>
+	<string>http://132.145.44.1:8000/ios/JUBIglSWd_amazon</string>
 	<key>ChatBotProjectID</key>
-	<string>JUBIZm13rS_bajajFinserv</string>
+	<string>JUBIglSWd_amazon</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>You can select photos to attach to reports.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Aapp uses Speech recognition to transform your spoken words into text and then analyze the, so watch what you say!.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -45,9 +49,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>You can select photos to attach to reports.</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Aapp uses Speech recognition to transform your spoken words into text and then analyze the, so watch what you say!.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>$(PRODUCT_NAME) microphone use</string>
 </dict>
 </plist>

@@ -2,7 +2,7 @@ PODS:
   - AWSCore (2.6.35)
   - AWSS3 (2.6.35):
     - AWSCore (= 2.6.35)
-  - ChatBotBJ (1.0.7):
+  - ChatBotICICI (1.0.3):
     - AWSS3 (~> 2.6.13)
     - Firebase/Core
     - FirebaseMessaging
@@ -76,13 +76,13 @@ PODS:
   - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
-  - ChatBotBJ
+  - ChatBotICICI
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AWSCore
     - AWSS3
-    - ChatBotBJ
+    - ChatBotICICI
     - DACircularProgress
     - Firebase
     - FirebaseAnalytics
@@ -101,7 +101,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AWSCore: 2dab62ef2e5ca5d8c72c6cbdb3a6ea1532c27c2b
   AWSS3: 282a590bb47e9cd88de24979fb28954399c41c52
-  ChatBotBJ: 340ffc0975033ef2d38d6ae2fddb5d01fbce6c65
+  ChatBotICICI: fedafad91b8b45013dd878b5e7e016e6c48fc534
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
   FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
@@ -117,6 +117,6 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 6cc05ebc315463f7d1d3b73e83b71b66dd53e7f3
+PODFILE CHECKSUM: d3e96e4b94a315527ba8c79b1aba743072c3407d
 
 COCOAPODS: 1.5.3

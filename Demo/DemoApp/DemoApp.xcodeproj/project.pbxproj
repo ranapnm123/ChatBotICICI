@@ -202,7 +202,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/ChatBotBJ/ChatBotPro.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ChatBotICICI/ChatBotPro.bundle",
 				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle",
 				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle",
 			);
