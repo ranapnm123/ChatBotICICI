@@ -16,7 +16,7 @@
     // Initialization code
     self.imageview.layer.cornerRadius = 18;
     self.imageview.clipsToBounds = true;
-    self.imageview.layer.borderWidth = 1.0;
+    self.imageview.layer.borderWidth = 0.0;
     self.imageview.layer.borderColor = [UIColor colorWithRed:22/255.0 green:188/255.0 blue:206/255.0 alpha:1].CGColor;
     
     [self showProgress];
