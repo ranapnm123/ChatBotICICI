@@ -125,8 +125,7 @@
     _messageTextField.translatesAutoresizingMaskIntoConstraints = false;
     [[_messageTextField.rightAnchor constraintEqualToAnchor:_audioBtn.leftAnchor constant:-10] setActive:true];
     
-    [_audioBtn setImage:[UIImage imageNamed:@"Microphone"] forState:UIControlStateNormal];
-   
+    [self deActivateMic];
 }
 
   
@@ -182,7 +181,9 @@
 }
 
 - (void)deActivateMic {
-    [_audioBtn setImage:[UIImage imageNamed:@"Microphone"] forState:UIControlStateNormal];
+    NSBundle *resourceBundle = [Utility getBundleForChatBotPro];
+    UIImage *img = [UIImage imageNamed:@"Microphone" inBundle:resourceBundle compatibleWithTraitCollection:nil];
+    [_audioBtn setImage:img forState:UIControlStateNormal];
 
 //    UIImage *microImg = self.audioBtn.imageView.image;
 //    if ([microImg respondsToSelector:@selector(imageWithRenderingMode:)]) {
