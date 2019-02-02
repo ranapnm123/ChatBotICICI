@@ -65,6 +65,9 @@
 @property (strong, nonatomic) NSString *projectID;
 @property (strong, nonatomic) NSString *baseURL;
 @property (strong, nonatomic) NSMutableArray *arrayToReplace;
+@property (strong, nonatomic) UILabel *titleLabel;
+@property (strong, nonatomic) UILabel *subTitleLabel;
+
 @end
 
 @implementation ViewController
@@ -117,6 +120,10 @@
     [self setUpCognitoCredentials];
     _arrayToReplace = [NSMutableArray arrayWithObjects:@"|br|", nil];
     [self speechRecognition];
+    
+    _attachmentBtn.hidden = true;
+    _audioBtn.translatesAutoresizingMaskIntoConstraints = false;
+    [[_audioBtn.rightAnchor constraintEqualToAnchor:_sendBtn.leftAnchor constant:-10] setActive:true];
     
     _messageTextField.translatesAutoresizingMaskIntoConstraints = false;
     [[_messageTextField.rightAnchor constraintEqualToAnchor:_audioBtn.leftAnchor constant:-10] setActive:true];
@@ -314,7 +321,7 @@
     self.messageList = [[NSMutableArray alloc] init];
     
 
-    menuList = [[NSArray alloc] initWithObjects:@"Start Over",@"Personal Loan",@"Home Loan",@"Loan Against Property",@"Cancel",nil];
+    menuList = [[NSArray alloc] initWithObjects:@"Invest Now",@"Talk to Agent"  ,@"Cancel",nil];
     
 }
 

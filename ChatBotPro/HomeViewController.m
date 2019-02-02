@@ -68,7 +68,7 @@
     UIImage *img = [UIImage imageNamed:@"floating" inBundle:resourceBundle compatibleWithTraitCollection:nil];
     _startBotBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_startBotBtn setFrame:CGRectMake(self.view.frame.size.width - 80, self.view.frame.size.height - 120, 60, 60)];
-    [_startBotBtn setBackgroundImage:img forState:UIControlStateNormal];
+    [_startBotBtn setImage:img forState:UIControlStateNormal];
     [_startBotBtn addTarget:self action:@selector(startBotAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_startBotBtn];
 

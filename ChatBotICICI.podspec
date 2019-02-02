@@ -3,14 +3,14 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ChatBotICICI"
-  s.version      = "1.0.4"
+  s.version      = "1.0.7"
   s.summary      = "Pod for ChatBotICICI"
 
     s.description  = <<-DESC
 	Pod for ChatBot
                    DESC
 
-  s.homepage     = "https://www.example.com"
+  s.homepage     = "https://github.com/ranapnm123/ChatBotICICI.git"
 
 
    s.license      = { :type => "MIT", :file => "LICENSE" }

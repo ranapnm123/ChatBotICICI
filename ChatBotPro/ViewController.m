@@ -124,6 +124,8 @@
     
     _messageTextField.translatesAutoresizingMaskIntoConstraints = false;
     [[_messageTextField.rightAnchor constraintEqualToAnchor:_audioBtn.leftAnchor constant:-10] setActive:true];
+    
+    [_audioBtn setImage:[UIImage imageNamed:@"Microphone"] forState:UIControlStateNormal];
    
 }
 
@@ -175,17 +177,19 @@
     if ([microImg respondsToSelector:@selector(imageWithRenderingMode:)]) {
         UIImage *colorlessImg = [microImg imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]; // crash for ios6, not in ios 7
         [self.audioBtn setImage:colorlessImg forState:UIControlStateNormal];
-        self.audioBtn.imageView.tintColor = UIColor.blueColor;
+//        self.audioBtn.imageView.tintColor = UIColor.blueColor;
     }
 }
 
 - (void)deActivateMic {
-    UIImage *microImg = self.audioBtn.imageView.image;
-    if ([microImg respondsToSelector:@selector(imageWithRenderingMode:)]) {
-        UIImage *colorlessImg = [microImg imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]; // crash for ios6, not in ios 7
-        [self.audioBtn setImage:colorlessImg forState:UIControlStateNormal];
-        self.audioBtn.imageView.tintColor = UIColor.lightGrayColor;
-    }
+    [_audioBtn setImage:[UIImage imageNamed:@"Microphone"] forState:UIControlStateNormal];
+
+//    UIImage *microImg = self.audioBtn.imageView.image;
+//    if ([microImg respondsToSelector:@selector(imageWithRenderingMode:)]) {
+//        UIImage *colorlessImg = [microImg imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]; // crash for ios6, not in ios 7
+//        [self.audioBtn setImage:colorlessImg forState:UIControlStateNormal];
+//        self.audioBtn.imageView.tintColor = UIColor.lightGrayColor;
+//    }
 }
     
     - (void)startListening {
@@ -318,7 +322,7 @@
     self.messageList = [[NSMutableArray alloc] init];
     
 
-    menuList = [[NSArray alloc] initWithObjects:@"Start Over",@"Personal Loan",@"Home Loan",@"Loan Against Property",@"Cancel",nil];
+    menuList = [[NSArray alloc] initWithObjects:@"Invest Now",@"Talk to Agent"  ,@"Cancel",nil];
     
 }
 
@@ -909,7 +913,7 @@
         [UIView animateWithDuration:0.85 delay:0 options:UIViewAnimationOptionCurveLinear  animations:^{
 
         } completion:^(BOOL finished) {
-            self.heightConstant.constant = 410;
+            self.heightConstant.constant = 220;
             self.widthConstant.constant = 294;
             //code for completion
         }];
