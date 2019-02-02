@@ -591,7 +591,6 @@
                                                                                 <constraint firstAttribute="height" constant="21" id="Fwp-5j-c4m"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                            <color key="textColor" red="0.0" green="0.69488236720538554" blue="0.76417147655694406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
