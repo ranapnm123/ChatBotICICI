@@ -684,7 +684,7 @@
     
     if (tableView == self.menuTableView) {
         MenuTableViewCell *cell = (MenuTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"MenuTableViewCell"];
-        cell.titleLabel.textColor = [UIColor colorWithRed:22/255.0 green:188/255.0 blue:206/255.0 alpha:1];
+//        cell.titleLabel.textColor = [UIColor colorWithRed:22/255.0 green:188/255.0 blue:206/255.0 alpha:1];
         cell.titleLabel.text = [menuList objectAtIndex:indexPath.row];
         return cell;
     }
